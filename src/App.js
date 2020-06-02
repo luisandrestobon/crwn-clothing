@@ -38,6 +38,8 @@ class App extends React.Component {
           console.log(this.state);
         });
       } else {
+        console.log('No hay usuario...');
+        localStorage.clear();
         setCurrentUser(userAuth);
       }
     });
